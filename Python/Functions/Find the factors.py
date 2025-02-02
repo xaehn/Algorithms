@@ -6,3 +6,5 @@ def find_the_factors(number):
         if number % divisor == 0:
             factors.add(divisor)
             factors.add(number // divisor)
+
+    return factors
