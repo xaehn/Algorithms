@@ -1,9 +1,11 @@
+from collections import deque
+
 class Stack:
     def __init__(self):
-        self.top = []
+        self.top = deque()
 
     def clear(self):
-        self.top = []
+        self.top.clear()
 
     def is_empty(self):
         return len(self.top) == 0
@@ -12,7 +14,7 @@ class Stack:
         return self.top[-1]
 
     def pop(self):
-        return self.top.pop(-1)
+        return self.top.pop()
 
     def push(self, item):
         self.top.append(item)
