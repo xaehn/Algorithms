@@ -1,4 +1,7 @@
 def combination(n, r):
+    if n < r:
+        return 0
+    
     if n - r < r:
         r = n - r
 
