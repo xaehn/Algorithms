@@ -1,4 +1,9 @@
 class SinglyLinkedList:
+    class Node:
+        def __init__(self, data, link = None):
+            self.data = data
+            self.link = link
+
     def __init__(self):
         self.head = None
 
@@ -68,8 +73,3 @@ class SinglyLinkedList:
             count += 1
 
         return count
-
-class Node:
-    def __init__(self, data, link = None):
-        self.data = data
-        self.link = link
