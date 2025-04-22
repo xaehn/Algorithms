@@ -21,7 +21,6 @@ def kmp(string, pattern, length = None, plength = None):
     if plength == None:
         plength = len(pattern)
 
-    plength = len(pattern)
     results = []
     pidx = 0
     for idx in range(length):
