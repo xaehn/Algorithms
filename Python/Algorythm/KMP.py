@@ -1,7 +1,6 @@
 def kmp_table(pattern):
     length = len(pattern)
     table = length * [0]
-
     prefix = 0
     for suffix in range(1, length):
         while 0 < prefix and pattern[prefix] != pattern[suffix]:
