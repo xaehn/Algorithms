@@ -13,9 +13,14 @@ def kmp_table(pattern):
 
     return table
 
-def kmp(string, pattern):
+def kmp(string, pattern, length = None, plength = None):
     table = kmp_table(pattern)
-    length = len(string)
+    if length == None:
+        length = len(string)
+
+    if plength == None:
+        plength = len(pattern)
+
     plength = len(pattern)
     results = []
     pidx = 0
