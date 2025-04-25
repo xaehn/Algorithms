@@ -1,4 +1,10 @@
 class DoublyLinkedList:
+    class Node:
+        def __init__(self, data, llink = None, rlink = None):
+            self.data = data
+            self.llink = llink
+            self.rlink = rlink
+
     def __init__(self):
         self.head = None
         self.tail = None
@@ -33,14 +39,18 @@ class DoublyLinkedList:
             print(node.data, end = " ")
             node = node.rlink
 
+        print()
+
     def display_tail_to_head(self):
         node = self.tail
         while not node == None:
             print(node.data, end = " ")
             node = node.llink
 
+        print()
+
     def insert_head(self, data):
-        node = Node(data, None, self.head)
+        node = self.Node(data, None, self.head)
         if self.is_empty():
             self.head = node
             self.tail = node
@@ -49,7 +59,7 @@ class DoublyLinkedList:
             self.head = node
 
     def insert_tail(self, data):
-        node = Node(data, self.tail, None)
+        node = self.Node(data, self.tail, None)
         if self.is_empty():
             self.head = node
             self.tail = node
@@ -59,9 +69,3 @@ class DoublyLinkedList:
 
     def is_empty(self):
         return self.head == None and self.tail == None
-
-class Node:
-    def __init__(self, data, llink = None, rlink = None):
-        self.data = data
-        self.llink = llink
-        self.rlink = rlink

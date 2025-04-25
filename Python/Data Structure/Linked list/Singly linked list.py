@@ -50,9 +50,9 @@ class SinglyLinkedList:
             node = node.link
 
         if node == None:
-            self.head = Node(data, self.head)
+            self.head = self.Node(data, self.head)
         else:
-            new_node = Node(data, node.link)
+            new_node = self.Node(data, node.link)
             node.link = new_node
 
     def is_empty(self):
