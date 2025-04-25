@@ -8,7 +8,7 @@ class Queue:
         self.queue.clear()
 
     def dequeue(self):
-        self.queue.popleft()
+        return self.queue.popleft()
 
     def enqueue(self, item):
         self.queue.append(item)
