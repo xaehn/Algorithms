@@ -1,4 +1,7 @@
 import math
 
-def euclidean_distance(x1, y1, x2, y2):
-    return math.hypot(x2 - x1, y2 - y1)
+def multidimensional_euclidean_distance(p1, p2):
+    return math.sqrt(sum((a - b) ** 2 for a, b in zip(p1, p2)))
+
+def euclidean_distance(p1, p2):
+    return math.hypot(p1[0] - p2[0], p1[1] - p2[1])
