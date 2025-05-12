@@ -12,7 +12,7 @@ class Queue:
 
     def enqueue(self, item):
         self.queue.append(item)
-    
+
     def is_empty(self):
         return len(self.queue) == 0
     
@@ -20,4 +20,7 @@ class Queue:
         return self.queue[0]
 
     def size(self):
+        return len(self.queue)
+
+    def __len__(self):
         return len(self.queue)

@@ -28,3 +28,6 @@ class CircularQueue:
     
     def size(self):
         return (self.rear - self.front + self.max_size) % self.max_size
+
+    def __len__(self):
+        return (self.rear - self.front + self.max_size) % self.max_size
