@@ -32,7 +32,7 @@ class DoublyLinkedList:
             self.tail.rlink = None
 
         return data
-    
+
     def display_head_to_tail(self):
         node = self.head
         while not node == None:

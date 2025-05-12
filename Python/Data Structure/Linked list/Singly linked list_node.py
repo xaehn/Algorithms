@@ -43,7 +43,7 @@ class SinglyLinkedList:
             node = node.link
 
         return node
-    
+
     def insert_node(self, position, data):
         node = self.head
         for _ in range(position - 1):
@@ -57,7 +57,7 @@ class SinglyLinkedList:
 
     def is_empty(self):
         return self.head == None
-    
+
     def replace_data(self, position, data):
         node = self.head
         for _ in range(position):

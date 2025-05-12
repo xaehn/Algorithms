@@ -15,19 +15,19 @@ class Deque:
 
     def is_empty(self):
         return len(self.deque) == 0
-    
+
     def peek_l(self):
         return self.deque[0]
 
     def peek_r(self):
         return self.deque[-1]
-    
+
     def pop_l(self):
         return self.deque.popleft()
 
     def pop_r(self):
         return self.deque.pop()
-    
+
     def rotate_l(self, n = 1):
         self.deque.rotate(-n)
 
