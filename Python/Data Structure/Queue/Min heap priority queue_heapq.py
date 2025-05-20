@@ -28,7 +28,7 @@ class MinHeapPriorityQueue:
     def __len__(self):
         return len(self.queue)
 
-# if priority == item #
+# if priority == item
 class MinHeapPriorityQueue:
     def __init__(self):
         self.queue = []
