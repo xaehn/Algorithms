@@ -1,4 +1,4 @@
-def matrix_multiply(a, b, mod = None, size = None):
+def matrix_multiply(a, b, mod, size = None):
     if size == None:
         size = len(a)
 
@@ -28,7 +28,7 @@ def matrix_modular_power(matrix, exp, mod, size = None):
     return result
 
 # application : fibonacci sequence
-def fibonacci_sequence(num, mod = None):
+def fibonacci_sequence(num, mod):
     if num == 0:
         return 0
 

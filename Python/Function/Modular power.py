@@ -1,4 +1,4 @@
-def modular_power(num, exp, mod = None):
+def modular_power(num, exp, mod):
     num %= mod
     result = 1
     while 0 < exp:
